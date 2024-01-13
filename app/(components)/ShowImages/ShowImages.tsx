@@ -14,15 +14,13 @@ const ShowImages: React.FC<ShowImagesProps> = ({ imageUrl, altText }) => {
 
   return (
     <>
-      <div className="flex flex-1">
-        <Image
-          src={imageUrl}
-          alt={altText}
-          height={100}
-          width={100}
-          className="w-96 h-96 rounded-md shadow-md"
-        />
-      </div>
+      <Image
+        src={imageUrl}
+        alt="alt text of image "
+        height={100}
+        width={100}
+        className="w-96 h-96 rounded-md shadow-md aspect-square object-cover "
+      />
     </>
   );
 };
